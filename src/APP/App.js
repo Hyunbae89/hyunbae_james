@@ -7,12 +7,14 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 import '../CSS/App.css';
 import {MainPage} from "./MainPage";
 import {AboutMe} from "./AboutMe";
-import Header from "./Header";
+import {Header} from "./Header";
 import {Contact} from "./Contact";
 import {PMain} from "./Projects/PMain";
 
 class App extends React.Component{
+
   render() {
+
     return(
         <BrowserRouter>
             <Header/>
@@ -20,19 +22,18 @@ class App extends React.Component{
             <Route
               path='/'
               element={<MainPage/>} />
-              <Route
+            <Route
+             path='/about'
+             element={<AboutMe/>} />
+            <Route
               path='/about'
               element={<AboutMe/>} />
-              <Route
-              path='/about'
-              element={<AboutMe/>} />
-              <Route
+            <Route
               path='/projects'
               element={<PMain/>} />
-              <Route
+            <Route
               path='/contact'
               element={<Contact/>} />
-          <Route />
           </Routes>
         </BrowserRouter>
     );
