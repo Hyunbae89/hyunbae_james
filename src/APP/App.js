@@ -5,9 +5,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 import '../CSS/App.css';
+
+import Header from "./Header";
 import {MainPage} from "./MainPage";
 import {AboutMe} from "./AboutMe";
-import {Header} from "./Header";
 import {Contact} from "./Contact";
 import {PMain} from "./Projects/PMain";
 

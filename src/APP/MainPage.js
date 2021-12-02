@@ -3,6 +3,8 @@ import {AboutMe} from "./AboutMe";
 import {Contact} from "./Contact";
 import {PMain} from "./Projects/PMain";
 import Waves from '../FILE/Waves.mp4';
+import TopButton from "./TopButton";
+import Quote from "./Quote";
 
 export class MainPage extends React.Component{
     render() {
@@ -21,9 +23,11 @@ export class MainPage extends React.Component{
                       </div>
                   </div>
               </section>
+              <Quote/>
               <AboutMe/>
               <PMain/>
               <Contact/>
+              <TopButton/>
               <video src={Waves} autoPlay muted loop/>
           </div>
         );
