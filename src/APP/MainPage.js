@@ -1,5 +1,5 @@
 import React from "react";
-import {AboutMe} from "./AboutMe";
+import AboutMe from "./AboutMe";
 import {Contact} from "./Contact";
 import {PMain} from "./Projects/PMain";
 import Waves from '../FILE/Waves.mp4';

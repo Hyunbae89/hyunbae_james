@@ -7,18 +7,28 @@ export default function Quote() {
                 <h5 ><em>TOUCHING SAYING</em></h5>
             </Row>
             <Row className="text-center pb-5">
-                <blockquote id="quote">
-                    <Row>
-                        <h2>
-                            <em>바다에 혼자 있어보아라.</em>
-                        </h2>
-                    </Row>
-                    <Row>
-                        <h2>
-                            <em>바다는 당신이 인식하지도 못했던 문제들에 대한 해답을 얻을 장소이다.</em>
-                        </h2>
-                    </Row>
-                </blockquote>
+                <figure>
+                    <blockquote id="quote">
+                        <Row>
+                            <h2>
+                                <em>우리들의 중요한 임무는 멀리 있는 희미한것을 보는게 아니라,</em>
+                            </h2>
+                        </Row>
+                        <Row>
+                            <h2>
+                                <em>가까이 있는 분명한 것을 실천하는 것이다.</em>
+                            </h2>
+                        </Row>
+                    </blockquote>
+                    <h4>
+                        <figcaption className="blockquote-footer pt-3">
+                            토머스 칼라일
+                        </figcaption>
+                    </h4>
+
+
+                </figure>
+
 
                 <p>
 

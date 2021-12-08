@@ -8,7 +8,7 @@ import '../CSS/App.css';
 
 import Header from "./Header";
 import {MainPage} from "./MainPage";
-import {AboutMe} from "./AboutMe";
+import AboutMe from "./AboutMe";
 import {Contact} from "./Contact";
 import {PMain} from "./Projects/PMain";
 
