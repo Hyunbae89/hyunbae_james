@@ -9,7 +9,7 @@ import Quote from "./Quote";
 export class MainPage extends React.Component{
     render() {
         return(
-          <div className="mainFreame">
+          <div >
               <section className="jumbotron" id="mainPage-chapter1">
                   <div className="container py-5">
                       <div className='row justify-content-center'>
@@ -25,8 +25,8 @@ export class MainPage extends React.Component{
               </section>
               <Quote/>
               <AboutMe/>
-              <PMain/>
-              <Contact/>
+              <PMain id="projects"/>
+              <Contact id="contact"/>
               <TopButton/>
               <video src={Waves} autoPlay muted loop/>
           </div>

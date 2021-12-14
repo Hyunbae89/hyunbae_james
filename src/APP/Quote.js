@@ -25,14 +25,7 @@ export default function Quote() {
                             토머스 칼라일
                         </figcaption>
                     </h4>
-
-
                 </figure>
-
-
-                <p>
-
-                </p>
             </Row>
         </Container>
     )

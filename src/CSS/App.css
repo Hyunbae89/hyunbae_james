@@ -21,7 +21,17 @@
 #root{
   z-index: 1;
 }
+.nav-background{
+  background-color: transparent;
+}
 
+.offcanvas-header{
+  background-color: #212529;
+  color: whitesmoke;
+}
+.offcanvas-body{
+  background-color: #212529;
+}
 .page-header{
   z-index: 9999;
 }
@@ -42,6 +52,8 @@
 }
 .navbar-nav a:hover{
   background-color: #999999;
+  color: #f5f5f5;
+  cursor:pointer;
 }
 
 .mainFreame{
@@ -53,7 +65,7 @@
   position: relative;
   width: 100%;
   margin-top: 40vh;
-  height: calc(100vh - 40vh - 56px);
+  height: calc(100vh - 40vh);
   /*font-family: 'Yeon Sung', cursive;*/
   display: block;
   background-size: cover;
@@ -72,29 +84,72 @@ video{
 .topBtn{
   position: fixed;
   bottom: 2rem;
-  right: 2rem;
+  right: 1rem;
   z-index: 1;
 }
 
 @media (max-width: 767px) {
+  .AboutMeText{
+    padding: 20px 10px;
+    font-size: 4.1vw;
+    text-align: center;
+  }
   #profileImg {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    width: 45vw;
+    height: 45vw;
   }
 }
 @media (min-width: 768px) {
+  .AboutMeText{
+    padding: 20px 10px;
+    font-size: 2vw;
+  }
+  #mainPageAboutMe {
+    max-width: 90vw;
+  }
   #profileImg {
+    object-fit: cover;
+    display: block;
     margin: auto;
+    width: 20vw;
+    height: 20vw;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-#profileImg {
+  .AboutMeText{
+    padding: 20px 10px;
+    font-size: 1.5vw;
+  }
+
+  #mainPageAboutMe {
+    max-width: 85vw;
+  }
+  #profileImg {
+    object-fit: cover;
+    display: block;
     margin: auto;
+    width: 20vw;
+    height: 20vw;
+
   }
 }
 @media (min-width: 1200px){
+  .AboutMeText{
+    padding: 20px 10px;
+    font-size: 0.9vw;
+  }
+  #mainPageAboutMe {
+    max-width: 75vw;
+  }
   #profileImg {
-
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    width: 15vw;
+    height: 15vw;
   }
 }
 
@@ -104,8 +159,31 @@ video{
 
 #mainPageAboutMeOuter{
   background-color: #ffff;
+  /*height: 80vh;*/
 
 }
 #mainPageAboutMe{
   background-color: #F7F8F9;
+  height: 100%
+
 }
+
+.card:hover{
+  width: 100%;
+   transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  background-color: rgba(251, 251, 251, 0.2);
+  z-index: 1;
+}
+
+.circularImg{
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+}
+/*.AboutMeText{*/
+/*  padding: 30px;*/
+/*}*/
+/*.about_content{*/
+/*  font-size: 1.8vw;*/
+/*}*/
