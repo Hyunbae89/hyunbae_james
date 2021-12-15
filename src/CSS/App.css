@@ -87,6 +87,9 @@ video{
   right: 1rem;
   z-index: 1;
 }
+.openTack-btn{
+  max-width: 200px;
+}
 
 @media (max-width: 767px) {
   .AboutMeText{
