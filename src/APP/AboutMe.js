@@ -1,5 +1,6 @@
 import aboutMe from '../FILE/hyunbae.JPG';
-import {Col, Container, Image, Row} from "react-bootstrap";
+import {Col, Container, Image, Row, Button} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 export default function AboutMe(){
     return(
@@ -7,14 +8,28 @@ export default function AboutMe(){
             <Container className="my-2 py-3" id="mainPageAboutMe">
                 <Row className="">
                     <Col sm={12} md={8} xl={8}>
-                        <Row className="AboutMeText">
+                        <Row className="AboutMeText text-center">
                             <h2 className="text-center">About Me</h2>
-                            <p>
+                            <div className="col-12">
                                 반갑습니다. Web Front-End 개발자 전현배(James)입니다.
-                                저는 해외 인턴을 시작으로 커리어 대부분의 시간을 미국에서 보냈습니다.
-
+                            </div>
+                            <p className="col-12">
+                                저는 해외 인턴을 시작으로 커리어 대부분의 시간을 미국에서 보냈습니다. <br/>
+                                그래서 현재 한국에서의 도전이 조금은 낯설기도 합니다.
                             </p>
+                            <p className="col-12">
+                                하지만 꿈을 이루기 위해 도전했던 수많은 시간과 노력이 <br/>
+                                지금의 나를 만든 것 처럼
+                            </p>
+                            <div className="col-12">
+                                성장하기 위해 다시 도전하려고 합니다.
+                            </div>
 
+                        </Row>
+                        <Row className="mx-5 justify-content-center">
+                            <Link to={'/about_me'} className="btn btn-outline-dark more-btn" >
+                                더보기
+                            </Link>
                         </Row>
                     </Col>
                     <Col sm={12} md={4} xl={4}>

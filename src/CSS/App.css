@@ -50,6 +50,9 @@
   width: 100%;
   border-radius: 4px;
 }
+.navbar-brand{
+  cursor:pointer;
+}
 .navbar-nav a:hover{
   background-color: #999999;
   color: #f5f5f5;
@@ -71,6 +74,11 @@
   background-size: cover;
   color: whitesmoke;
 }
+.busan_img{
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
 video{
   position: absolute;
   top: 0;
@@ -90,12 +98,32 @@ video{
 .openTack-btn{
   max-width: 200px;
 }
+#quote{
+  font-family: 'Gowun Dodum', sans-serif;
+
+}
+.blockquote-footer{
+  font-size: 21px;
+}
 
 @media (max-width: 767px) {
+  .contact-text{
+    font-size: 16px;
+  }
+  #quote{
+    font-size: 17px;
+  }
+  .blockquote-footer{
+    font-size: 14px;
+  }
   .AboutMeText{
     padding: 20px 10px;
-    font-size: 4.1vw;
+    font-size: 12px;
     text-align: center;
+  }
+  .more-btn{
+    width: 50vw;
+    font-size: 12px;
   }
   #profileImg {
     object-fit: cover;
@@ -106,9 +134,19 @@ video{
   }
 }
 @media (min-width: 768px) {
+  #quote{
+    font-size: 29px;
+  }
+  .blockquote-footer{
+    font-size: 19px;
+  }
   .AboutMeText{
     padding: 20px 10px;
-    font-size: 2vw;
+    font-size: 12px;
+  }
+  .more-btn{
+    width: 50vw;
+    font-size: 12px;
   }
   #mainPageAboutMe {
     max-width: 90vw;
@@ -122,9 +160,19 @@ video{
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  #quote{
+    font-size: 32px;
+  }
+  .blockquote-footer{
+    font-size: 21px;
+  }
   .AboutMeText{
     padding: 20px 10px;
     font-size: 1.5vw;
+  }
+  .more-btn{
+    width: 50vw;
+    font-size: 12px;
   }
 
   #mainPageAboutMe {
@@ -140,8 +188,18 @@ video{
   }
 }
 @media (min-width: 1200px){
+  #quote{
+    font-size: 35px;
+  }
+  .blockquote-footer{
+    font-size: 23px;
+  }
   .AboutMeText{
     padding: 20px 10px;
+    font-size: 0.9vw;
+  }
+  .more-btn{
+    width: 30vw;
     font-size: 0.9vw;
   }
   #mainPageAboutMe {
@@ -156,9 +214,7 @@ video{
   }
 }
 
-#quote{
-  font-family: 'Gowun Dodum', sans-serif;
-}
+
 
 #mainPageAboutMeOuter{
   background-color: #ffff;
@@ -173,9 +229,10 @@ video{
 
 .card:hover{
   width: 100%;
-   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-  background-color: rgba(251, 251, 251, 0.2);
+  filter: brightness(70%);
+  transition: 0.3s ease;
+  color: white;
   z-index: 1;
 }
 
@@ -183,6 +240,9 @@ video{
   position: relative;
   overflow: hidden;
   padding: 30px;
+}
+.main-text, .contact-text{
+  font-family: 'Gowun Dodum', sans-serif;
 }
 /*.AboutMeText{*/
 /*  padding: 30px;*/

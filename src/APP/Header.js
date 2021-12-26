@@ -31,7 +31,7 @@ export default function Header(){
             <Navbar collapseOnSelect fixed="top" className={ScrollActive ? "nav-background":""}
                     bg={ScrollActive ? "dark":""} variant='dark' expand="lg" >
                 <Container fluid>
-                    <Navbar.Brand as={Link} to="mainPage-chapter1" eventKey={1} spy={true} smooth={true} duration={100} offset={-400} >
+                    <Navbar.Brand as={Link} to="mainPage-chapter1" spy={true} smooth={true} duration={100} offset={-400} >
                         <FontAwesomeIcon className="mx-3" icon={faDragon} />
                         James lives Busan
                     </Navbar.Brand>
@@ -39,10 +39,10 @@ export default function Header(){
                     <Navbar.Toggle aria-controls="navbar-offcanvas"/>
                     {size.width > 991 ?
                         <Nav className="me-auto">
-                            <Nav.Link as={Link} to="mainPage-chapter1" eventKey={1} spy={true} smooth={true} duration={100} offset={-400}>Home</Nav.Link>
-                            <Nav.Link as={Link} to="mainPageAboutMeOuter" eventKey={2} spy={true} smooth={true} duration={100} offset={-80} >About</Nav.Link>
-                            <Nav.Link as={Link} to="#projects" eventKey={3} spy={true} smooth={true} duration={100} offset={-50}>Projects</Nav.Link>
-                            <Nav.Link as={Link} to="mainPageContact" eventKey={4} spy={true} smooth={true} duration={100} offset={50}>Contact</Nav.Link>
+                            <Nav.Link as={Link} to="mainPage-chapter1"  spy={true} smooth={true} duration={100} offset={-400}>Home</Nav.Link>
+                            <Nav.Link as={Link} to="mainPageAboutMeOuter"  spy={true} smooth={true} duration={100} offset={-80} >About</Nav.Link>
+                            <Nav.Link as={Link} to="mainPageProjects"  spy={true} smooth={true} duration={100} offset={-50}>Projects</Nav.Link>
+                            <Nav.Link as={Link} to="mainPageContact"  spy={true} smooth={true} duration={100} offset={50}>Contact</Nav.Link>
                         </Nav> : null}
 
                     <Navbar.Offcanvas aria-labelledby="navbar-offcanvas" placement="end" scroll={true} >
@@ -56,7 +56,7 @@ export default function Header(){
                             <Nav>
                                 <Nav.Link as={Link} to="mainPage-chapter1" eventKey={1} spy={true} smooth={true} duration={100} offset={-400}>Home</Nav.Link>
                                 <Nav.Link as={Link} to="mainPageAboutMeOuter" eventKey={2} spy={true} smooth={true} duration={100} offset={-80} >About</Nav.Link>
-                                <Nav.Link as={Link} to="#projects" eventKey={3} spy={true} smooth={true} duration={100} offset={-80}>Projects</Nav.Link>
+                                <Nav.Link as={Link} to="mainPageProjects" eventKey={3} spy={true} smooth={true} duration={100} offset={-80}>Projects</Nav.Link>
                                 <Nav.Link as={Link} to="mainPageContact" eventKey={4} spy={true} smooth={true} duration={100} offset={50}>Contact</Nav.Link>
                             </Nav>
                         </Offcanvas.Body>

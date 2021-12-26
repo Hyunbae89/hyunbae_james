@@ -30,7 +30,7 @@ export class Contact extends React.Component{
                                   <FontAwesomeIcon className="fa-lg" icon={faEnvelope} />
                               </Col>
                               <Col xs={9}>
-                                  <h5>
+                                  <h5 className="user-select-all">
                                       zxcv6487@gmail.com
                                   </h5>
                               </Col>
@@ -40,12 +40,17 @@ export class Contact extends React.Component{
                           <Row className="my-4">
                               <QRCode value={"https://open.kakao.com/o/sSpI4Apd"} renderAs={"svg"}/>
                           </Row>
-                          <Row className="mb-4  mb-5 mx-5 text-center justify-content-center">
+                          <Row className="mb-4 mx-5 text-center justify-content-center">
                               <Button className="openTack-btn align-self-center " href="https://open.kakao.com/o/sSpI4Apd" target="_blank" rel="noopener noreferrer" variant="secondary" size="lg">
-                                  1:1 오픈 채팅
+                                  1 : 1 오픈 채팅
                               </Button>
                           </Row>
                       </Col>
+                  </Row>
+                  <Row className="py-3 text-center">
+                      <blockquote className="blockquote contact-text">
+                          <p>가까이 있는 분명한 것을 실천하기 위해 <br/> 언제나 힘쓰겠습니다.  감사합니다.</p>
+                      </blockquote>
                   </Row>
               </Container>
             </section>
